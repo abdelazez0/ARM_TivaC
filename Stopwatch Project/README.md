@@ -1,6 +1,6 @@
-## Stopwatch Project 
+# Stopwatch Project 
 
-# Class 2 - Team 5
+## Class 2 - Team 5
 Mohamed Abdelazez
 Hossam Mostafa
 
