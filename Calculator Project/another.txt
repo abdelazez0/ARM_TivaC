@@ -1,0 +1,19 @@
+/*
+ *char localpinstate;
+ * for(row =1;row<5;row++)
+ * {
+ *    GPIO_PORTE_DATA_R=(1U << row);
+ *    for(coul=0;coul<4;coul++)
+ *    if(flag1==1)
+ *       {
+ *         localpinstate=KPD[row-1][coul];
+ *         flag=0;
+ *       }
+ *
+ *       to check it release the pin*/
+            //while(get_bit(GPIO_PORTC_DATA_R,(row))&(0x01)==0);
+            //return localpinstate;
+ *          //}
+ *       /*;
+ *
+ * */
