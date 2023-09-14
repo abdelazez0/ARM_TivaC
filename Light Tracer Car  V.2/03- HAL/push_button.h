@@ -9,7 +9,7 @@
 #define HAL_PUSH_BUTTON_H_
 
 #define PUSH_BUTTON_PORT      PORTF
-#define PUSH_BOTTON_PIN       0x21
+#define PUSH_BOTTON_PIN       0x11
 #define START_BOTTON_PIN      SW_1
 #define STOP_BOTTON_PIN       SW_2
 
