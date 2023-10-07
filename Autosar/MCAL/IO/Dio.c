@@ -109,61 +109,28 @@ Dio_LevelType Dio_ReadChannel (Dio_ChannelType ChannelId)
 
 void Dio_WritePort (Dio_PortType PortId, Dio_PortLevelType Level)
 {
-    if(Level == STD_HIGH)
+    switch(PortId)
     {
-        switch(PortId)
-        {
-        case (PORTA):
-                                GPIO_PORTA_DATA_R = 0xFF;
-        break;
-        case (PORTB):
-                                GPIO_PORTB_DATA_R = 0xFF;
-        break;
-        case (PORTC):
-                                GPIO_PORTC_DATA_R = 0xFF;
-        break;
-        case (PORTD):
-                                GPIO_PORTD_DATA_R = 0xFF;
-        break;
-        case (PORTE):
-                                GPIO_PORTE_DATA_R = 0xFF;
-        break;
-        case (PORTF):
-                                GPIO_PORTF_DATA_R = 0xFF;
-        break;
-        default:
-        break;
-        }
-    }
-    else if(Level == STD_LOW)
-    {
-        switch(PortId)
-        {
-        case (PORTA):
-                                GPIO_PORTA_DATA_R = 0x00;
-        break;
-        case (PORTB):
-                                GPIO_PORTB_DATA_R = 0x00;
-        break;
-        case (PORTC):
-                                GPIO_PORTC_DATA_R = 0x00;
-        break;
-        case (PORTD):
-                                GPIO_PORTD_DATA_R = 0x00;
-        break;
-        case (PORTE):
-                                GPIO_PORTE_DATA_R = 0x00;
-        break;
-        case (PORTF):
-                                GPIO_PORTF_DATA_R = 0x00;
-        break;
-        default:
-            break;
-        }
-    }
-    else
-    {
-        /* do nothing */
+    case (PORTA):
+                                   GPIO_PORTA_DATA_R = Level;
+    break;
+    case (PORTB):
+                                   GPIO_PORTB_DATA_R = Level;
+    break;
+    case (PORTC):
+                                   GPIO_PORTC_DATA_R = Level;
+    break;
+    case (PORTD):
+                                   GPIO_PORTD_DATA_R = Level;
+    break;
+    case (PORTE):
+                                   GPIO_PORTE_DATA_R = Level;
+    break;
+    case (PORTF):
+                                   GPIO_PORTF_DATA_R = Level;
+    break;
+    default:
+    break;
     }
 }
 
