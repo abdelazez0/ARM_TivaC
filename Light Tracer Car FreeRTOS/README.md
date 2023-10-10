@@ -1,4 +1,4 @@
-# Light Tracer Car 🚗
+# Light Tracer Car using FreeRTOS 🚗
 
 ![WhatsApp_Image_2023-09-03_at_9 00 28_PM-removebg-preview](https://github.com/abdelazez0/ARM_TivaC/assets/72413579/c56bdb07-0b52-444f-87bd-ea63e76675ee)
 
